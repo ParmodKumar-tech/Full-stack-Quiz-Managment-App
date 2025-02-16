@@ -41,6 +41,7 @@ export default function QuizCard(props){
     <p>{props.value.description}</p>
     </CardContent>
     <CardFooter className="flex justify-evenly">
+    
     <Button>
         <Link to={`/update/${props.value._id}`}>Edit</Link>
     </Button>

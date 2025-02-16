@@ -43,61 +43,16 @@ npm run dev  # Runs frontend on http://localhost:5173
 
 *** Endpoint**** frontend
 --- / ---User login ---[http://localhost:8000/]
---- /dashboard---Dashboard Page-- http://localhost:8000/dashboard
---- /create ---Create Quiz --- http://localhost:8000/create
---- /
+--- /dashboard---Dashboard Page-- [http://localhost:8000/dashboard]
+--- /create ---Create Quiz --- [http://localhost:8000/create]
+--- /update/:quizId --- Update/Edit Quiz -- [http://localhost:8000/update/:quizId]
 
---- /quiz/create/:teacherId --- create quiz ---[http://localhost:8000/quiz/create/:teacherId)
+*** Endpoint**** backend
+--- /quiz/create/:teacherId ---Create a new quiz ---[http://localhost:8000/quiz/create/:teacherId]
+--- /quiz/:teacherId---Get all quizzes by teacher ID --[http://localhost:8000/quiz/:teacherId]
+--- /quiz/update/:quizId ---Update quiz details --- [http://localhost:8000/quiz/update/:quizId]
+--- /quiz/delete/:quizId --- Delete a quiz -- [http://localhost:8000/update/:quizId]
 
-
-
-POST
-
-User registration
-
-http://localhost:8000/signup
-
-🔹 Quiz Routes
-
-Endpoint
-
-Method
-
-Description
-
-Example
-
-/quiz/create/:teacherId
-
-POST
-
-Create a new quiz
-
-http://localhost:8000/quiz/create/:teacherId
-
-/quiz/:teacherId
-
-GET
-
-Get all quizzes by teacher ID
-
-http://localhost:8000/quiz/:teacherId
-
-/quiz/update/:quizId
-
-PUT
-
-Update quiz details
-
-http://localhost:8000/quiz/update/:quizId
-
-/quiz/delete/:quizId
-
-GET
-
-Delete a quiz
-
-http://localhost:8000/quiz/delete/:quizId
 
 🔹 Example Request (Create Quiz)
 
@@ -123,9 +78,7 @@ http://localhost:8000/quiz/delete/:quizId
 
 🚀 Deployment Links
 
-Backend: https://backend-quiz-managment-app.vercel.app
-
-Frontend: https://frontend-quiz-managment-app.vercel.app
+Full-stack: https://frontend-quiz-managment-app.vercel.app
 
 🎯 Notes
 

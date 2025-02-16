@@ -16,7 +16,7 @@ import { Card,
 
 export default function QuizCard(props){
 
-    const nagivate=useNavigate();
+    const navigate=useNavigate();
 
     async function handleDelete() {
 

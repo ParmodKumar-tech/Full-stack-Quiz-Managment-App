@@ -12,7 +12,7 @@ export default function Form(){
     const nagivate=useNavigate();
 
     async function onSubmit(data){
-        await axios.post("http://localhost:8000/login",data)
+        await axios.post("https://backend-quiz-managment-app.vercel.app/login",data)
         .then((res)=>{
             console.log(res);
             if(res.data.success){

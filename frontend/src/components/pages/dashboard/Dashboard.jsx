@@ -32,8 +32,10 @@ export default function Dashboard(){
     return(
         <>
         <Hero/>
-        {data?.map((quiz,idx)=>(
-            <QuizCard value={quiz} key={idx}/>
+       {data?.map((quiz, idx) => (
+            <QuizCard key={idx} value={quiz} onDelete={(deletedId) => {
+                setData((prevData) => prevData.filter(q => q._id !== deletedId));
+            }}/>
         ))}
             
         </>

@@ -15,7 +15,7 @@ export function CreateQuiz(){
     const teacherId=localStorage.getItem("teacherId");
 
     async function onSubmit(data){
-        await axios.post(`http://localhost:8000/quiz/create/${teacherId}`,data)
+        await axios.post(`https://backend-quiz-managment-app.vercel.app/quiz/create/${teacherId}`,data)
         .then((res)=>{
             if(res.data.success){
                 toast.success(res.data.message);

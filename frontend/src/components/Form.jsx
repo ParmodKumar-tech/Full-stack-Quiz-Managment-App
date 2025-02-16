@@ -14,7 +14,7 @@ export default function Form(){
     async function onSubmit(data){
         await axios.post("https://backend-quiz-managment-app.vercel.app/login",data)
         .then((res)=>{
-            console.log(res);
+            
             if(res.data.success){
                 toast.success(res.data.message);
                 localStorage.setItem("teacherId",res.data.data._id);

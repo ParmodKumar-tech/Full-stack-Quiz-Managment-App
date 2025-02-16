@@ -1,5 +1,5 @@
 
-import Hero from './hero';
+import Hero from './Hero';
 import QuizCard from '@/components/QuizCard';
 import axios from 'axios';
 import { useEffect,useState } from 'react';

@@ -24,7 +24,7 @@ export function EditQuiz(){
 
 
     async function getQuizInfo(){
-        await axios.get(`http://localhost:8000/quiz/edit/${quizId}`)
+        await axios.get(`https://backend-quiz-managment-app.vercel.app/quiz/edit/${quizId}`)
         .then((res)=>{
             if(res.data.success){
                 setValue("title",res.data.data.title);
@@ -38,7 +38,7 @@ export function EditQuiz(){
     }
 
     async function onSubmit(data){
-        await axios.post(`http://localhost:8000/quiz/edit/${quizId}`,data)
+        await axios.post(`https://backend-quiz-managment-app.vercel.app/quiz/edit/${quizId}`,data)
         .then((res)=>{
             if(res.data.success){
                 toast.success(res.data.message);

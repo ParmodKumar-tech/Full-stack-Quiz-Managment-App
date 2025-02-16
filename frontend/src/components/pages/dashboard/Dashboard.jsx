@@ -16,7 +16,7 @@ export default function Dashboard(){
     },[])
    
     async function quizes(){
-        await axios.get(`http://localhost:8000/quiz/${teacherId}`)
+        await axios.get(`https://backend-quiz-managment-app.vercel.app/quiz/${teacherId}`)
         .then((res)=>{
             if(res.data.success){
                 setData(res.data.data)

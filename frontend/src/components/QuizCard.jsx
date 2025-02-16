@@ -23,8 +23,8 @@ export default function QuizCard(props){
         await axios.get(`https://backend-quiz-managment-app.vercel.app/quiz/delete/${props.value._id}`)
         .then((res)=>{
             if(res.data.success){
+                props.onDelete(props.value._id);
                 toast.success(res.data.message);
-               navigate("/dashboard");
             }
         })
         .catch((error)=>{

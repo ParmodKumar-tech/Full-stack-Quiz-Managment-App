@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from './ui/button';
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import { Card,
     CardHeader,
     CardTitle,
@@ -16,12 +16,17 @@ import { Card,
 
 export default function QuizCard(props){
 
+    const nagivate=useNavigate();
+
     async function handleDelete() {
 
         await axios.get(`https://backend-quiz-managment-app.vercel.app/quiz/delete/${props.value._id}`)
         .then((res)=>{
             if(res.data.success){
                 toast.success(res.data.message);
+                navigate("/dashboard");
+
+                
             }
         })
         .catch((error)=>{

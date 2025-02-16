@@ -18,7 +18,7 @@ export default function QuizCard(props){
 
     async function handleDelete() {
 
-        await axios.get(`http://localhost:8000/quiz/delete/${props.value._id}`)
+        await axios.get(`https://backend-quiz-managment-app.vercel.app/quiz/delete/${props.value._id}`)
         .then((res)=>{
             if(res.data.success){
                 toast.success(res.data.message);

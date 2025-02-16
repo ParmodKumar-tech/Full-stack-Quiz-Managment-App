@@ -24,9 +24,7 @@ export default function QuizCard(props){
         .then((res)=>{
             if(res.data.success){
                 toast.success(res.data.message);
-                navigate("/dashboard");
-
-                
+                window.location.reload();
             }
         })
         .catch((error)=>{

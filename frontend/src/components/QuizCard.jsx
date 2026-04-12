@@ -20,7 +20,7 @@ export default function QuizCard(props){
 
     async function handleDelete() {
 
-        await axios.get(`https://backend-quiz-managment-app.vercel.app/quiz/delete/${props.value._id}`)
+        await axios.get(`https://full-stack-quiz-managment-app.vercel.app/quiz/delete/${props.value._id}`)
         .then((res)=>{
             if(res.data.success){
                 props.onDelete(props.value._id);

@@ -74,5 +74,3 @@ https://backend-quiz-managment-app.vercel.app/login → http://localhost:8000/lo
 
 Same for all other endpoints
 
-👨‍💻 Happy Coding!
-

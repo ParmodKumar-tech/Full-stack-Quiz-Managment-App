@@ -5,8 +5,10 @@ Quiz Management System
 1️⃣ Prerequisites
 
 Ensure you have the following installed:
-Node.js (LTS recommended)
-MongoDB (Local or Atlas Cluster)
+Tailwindcss : Styling purpose
+Node.js : Js run-time
+MongoDB : As Database
+React : For UI components
 
 2️⃣ Clone the Repository
 git clone https://github.com/your-username/quiz-management-system.git

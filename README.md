@@ -31,11 +31,10 @@ npm run dev
 
 📌 API Documentation
 
-*** Endpoint**** backend
---- /quiz/create ---Create a new quiz 
---- /quiz/:teacherId---Get all quizzes by teacher ID 
---- /quiz/update/:quizId ---Update quiz details
---- /quiz/delete/:quizId --- Delete a quiz 
+/quiz/create ---Create a new quiz 
+/quiz/:teacherId---Get all quizzes by teacher ID 
+/quiz/update/:quizId ---Update quiz details
+/quiz/delete/:quizId --- Delete a quiz 
 
 
 🔹 Example Request (Create Quiz)

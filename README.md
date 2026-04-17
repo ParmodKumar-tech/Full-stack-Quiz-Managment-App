@@ -5,53 +5,37 @@ Quiz Management System
 1️⃣ Prerequisites
 
 Ensure you have the following installed:
-
 Node.js (LTS recommended)
-
 MongoDB (Local or Atlas Cluster)
 
 2️⃣ Clone the Repository
-
 git clone https://github.com/your-username/quiz-management-system.git
 cd quiz-management-system
 
-3️⃣ Install Dependencies
+3️⃣ Install Dependencies 
+cd backend
+npm install  
 
-npm install  # Installs dependencies for backend
-cd frontend
-npm install  # Installs dependencies for frontend
-
-4️⃣ Configure Environment Variables
-
-Create a .env file in the backend directory:
-
+4️⃣ Configure Environment Variables On Backend:
 MONGO_URL=your_mongodb_connection_string
-PORT=8000
+PORT=port
 
 5️⃣ Start the Server (Backend)
+npm start  
 
-npm start  # Runs backend on http://localhost:8000
 
 6️⃣ Start the Frontend
-
 cd frontend
-npm run dev  # Runs frontend on http://localhost:5173
+npm install
+npm run dev  
 
 📌 API Documentation
 
-🔹 Authentication Routes
-
-*** Endpoint**** frontend
---- / ---User login ---[http://localhost:8000/]
---- /dashboard---Dashboard Page-- [http://localhost:8000/dashboard]
---- /create ---Create Quiz --- [http://localhost:8000/create]
---- /update/:quizId --- Update/Edit Quiz -- [http://localhost:8000/update/:quizId]
-
 *** Endpoint**** backend
---- /quiz/create/:teacherId ---Create a new quiz ---[http://localhost:8000/quiz/create/:teacherId]
---- /quiz/:teacherId---Get all quizzes by teacher ID --[http://localhost:8000/quiz/:teacherId]
---- /quiz/update/:quizId ---Update quiz details --- [http://localhost:8000/quiz/update/:quizId]
---- /quiz/delete/:quizId --- Delete a quiz -- [http://localhost:8000/update/:quizId]
+--- /quiz/create ---Create a new quiz 
+--- /quiz/:teacherId---Get all quizzes by teacher ID 
+--- /quiz/update/:quizId ---Update quiz details
+--- /quiz/delete/:quizId --- Delete a quiz 
 
 
 🔹 Example Request (Create Quiz)
